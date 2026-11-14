@@ -12,6 +12,38 @@
 .chordList{gap:5px}.chordChip{padding:5px 9px;font-size:12px}.chord{padding:5px;margin:6px 6px 0 0;border-radius:8px;font-size:12px}.chord svg{width:94px;height:96px}.chord small{font-size:10px}.chord svg{overflow:visible}.chord svg line,.chord svg circle,.chord svg text{transform-box:view-box}.chord svg{transform-origin:top left}
 #chordsCard details{margin-top:6px!important}#chordsCard .muted{font-size:11px}.controlRow{gap:7px}.bpm{font-size:22px}.note{min-height:58px;margin:9px 0 7px;padding:9px;font-size:13px}.status{margin:5px 0 0}.muted{font-size:12px}.bottom{display:none!important}
 @media(max-width:700px){.top{padding:9px 12px}.wrap{padding:0 8px 25px}.pad{padding:10px}.songPicker{padding:9px}.songs{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.song{min-height:43px;padding:7px 9px}.songName{font-size:12px}.songMeta{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:145px}.trackLine{margin:2px 4px 8px}.trackLine strong{font-size:15px}.trackLine #artist{font-size:9px}.glass{margin-bottom:7px}.videoFrame{aspect-ratio:16/9}.playerCard #videoHint{max-height:32px;overflow:auto}.chord svg{width:83px;height:84px}.chord{padding:4px}.sectionHead h2{font-size:13px}}
+
+/* V2.2 / NOIR FREQUENCY — postmodern black / indigo / violet / acid-green visual skin */
+:root{--pink:#df5cce;--blue:#65d4ee;--muted:#aeb6cb;--line:#6b78af40}
+body{background:#050710;color:#e8ecfa}
+body:before{z-index:-2;background:
+radial-gradient(ellipse 55% 36% at 93% 4%,#6b2ab054 0%,transparent 75%),
+radial-gradient(ellipse 55% 38% at 1% 54%,#124b9252 0%,transparent 77%),
+radial-gradient(ellipse 36% 30% at 98% 91%,#26ad8240 0%,transparent 80%),
+linear-gradient(145deg,#050710,#090e1e 52%,#050713)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.27;background-image:repeating-linear-gradient(90deg,transparent 0 44px,#7382cb12 44px 45px),repeating-linear-gradient(0deg,transparent 0 44px,#7382cb10 44px 45px);mask-image:linear-gradient(180deg,#000,transparent 90%)}
+.top{position:relative;isolation:isolate;border-bottom:1px solid #6d76a22e;margin-bottom:9px}
+.top:before{content:"";position:absolute;left:12px;bottom:-1px;width:85px;height:2px;background:linear-gradient(90deg,#6bf1c3,#a16bff,#ed65b9);box-shadow:0 0 14px #a16bff8c}
+.brand{font-weight:950;font-style:italic;text-shadow:0 0 18px #5d65e55e}.brand b{color:#ad83ff;text-shadow:0 0 18px #b35cfa9c}
+.version{color:#8ef7d1;border-color:#69d5c35e;background:#12352e52}
+.songPicker{position:relative;isolation:isolate;background:linear-gradient(125deg,#161b32ed,#121329ed 65%,#23172ae6);border-color:#7471bd61}
+.songPicker:before{content:"";position:absolute;right:9px;top:7px;width:65px;height:28px;pointer-events:none;opacity:.65;background:repeating-linear-gradient(90deg,#9d7aff 0 3px,transparent 3px 9px);mask-image:linear-gradient(90deg,transparent,#000)}
+.songPicker .sectionHead h2:before{content:"";display:inline-block;width:5px;height:12px;margin-right:7px;border-radius:2px;background:#84efc8;box-shadow:0 0 10px #69e9c6}
+.glass{position:relative;background:linear-gradient(145deg,#171c30f5,#0d1223f2);border-color:#777db33e;box-shadow:0 6px 24px #0007,inset 0 1px #ffffff0a}
+.glass:after{content:"";position:absolute;right:0;top:0;width:34px;height:34px;pointer-events:none;border-top:1px solid #9c80ef68;border-right:1px solid #9c80ef68;border-top-right-radius:12px;opacity:.7}
+.song{background:linear-gradient(120deg,#24243f,#192439);border-color:#6e77a14a}
+.song.active{background:linear-gradient(110deg,#44264d,#22274a 65%,#153f4b);border-color:#a984fa;box-shadow:inset 3px 0 #76f4cc,0 0 15px #9b62eb21}
+.song.active .songName{color:#fff}.song:hover{border-color:#8d9fe2}
+.trackLine{border-left:2px solid #74ebc7;padding-left:9px}.trackLine strong{letter-spacing:.1px}.trackLine #week{color:#8ff1d0}
+.playerCard{border-color:#7367ba65;background:linear-gradient(135deg,#16172d,#101b30)}
+.playerCard:before{content:"";position:absolute;top:0;left:20px;width:130px;height:1px;background:linear-gradient(90deg,#80efc8,#a87dff,transparent);box-shadow:0 0 13px #a87dff}
+.videoFrame{background:radial-gradient(ellipse at 60% 15%,#54356b,#121627 65%);border-color:#8580c35c;box-shadow:0 0 0 3px #6658b814}
+.sectionHead h2{letter-spacing:.2px}.sectionHead h2:first-letter{color:#8ee9cf}
+.btn{background:linear-gradient(145deg,#292c4c,#1b2940);border-color:#6975a36b}.btn.primary{background:linear-gradient(110deg,#7442c1,#ab48a3);border-color:#b38af5}.btn.cyan{border-color:#57bca6;color:#96f4d3}
+.scoreCard{background:linear-gradient(115deg,#131a2e,#15162c)}.scoreEmpty{background:#0a1020b8;border-color:#7c7ca453}
+#chordsCard{background:linear-gradient(130deg,#111c2a,#17142a)}.chordChip{background:#232d43;border-color:#6e7ba66b}.chord{background:#101729;border-color:#6175aa68}
+#practice{background:linear-gradient(125deg,#111a2d,#19162b)}.bpm{color:#88f1d0;text-shadow:0 0 13px #51cfb44a}.note{background:#080e1d;border-color:#7778a75e}
+@media(max-width:700px){.top{margin-bottom:6px}.songPicker{margin-bottom:7px}.songPicker:before{width:40px;opacity:.4}.glass:after{width:18px;height:18px}.playerCard:before{width:80px}}
 </style></head><body>
 <div class="top"><div><div class="brand">GUITAR <b>LAB</b></div><div class="eyebrow">POSTMODERN ROCK STUDIO</div></div><span class="version">V 2.0</span></div>
 <div class="wrap"><section class="songPicker glass pad"><div class="sectionHead"><h2>♫ 本月精选 · 4首</h2><span class="sub">点击切换</span></div><div id="songs" class="songs"></div></section><div class="content"><div class="trackLine"><span id="artist"></span><strong id="title"></strong><span id="week"></span></div><div id="tags" class="tags" hidden></div><p id="goal" hidden></p><span id="artText" hidden></span>
